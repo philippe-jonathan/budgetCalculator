@@ -1,0 +1,45 @@
+.body {
+    display: flex;
+    width: 100%;
+}
+
+.budget-item {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .description {
+        flex-grow: 1;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+    .amount {
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+.income {
+    p {
+        margin: 0;
+        color: lighten(yellowgreen, 10%);
+    }
+
+    .amount {
+        background-color: lighten(yellowgreen, 40%);
+    }
+}
+
+.expenses {
+    p {
+        margin: 0;
+        color:lighten(#dc3900, 15%);
+    }
+
+    .amount {
+        background-color:lighten(#dc3900, 50%);
+    }
+}

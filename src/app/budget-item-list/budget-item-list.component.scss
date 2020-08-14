@@ -1,13 +1,15 @@
 .budget-items-section {
     display: flex;
-    padding: 50px;
+    // padding: 50px;
 
     justify-content: center;
     align-items: center;
 
+    margin: 5px;
+
     .budget-items-container {
         display: flex;
-        max-width: 60%;
+        max-width: auto;
         height: 100%;
         width: 100%;
 
@@ -24,7 +26,8 @@
         }
 
         .income-column {
-            
+            margin-right: 35px;
+
             h1 {
                 color: lighten(yellowgreen, 10%);
             }
