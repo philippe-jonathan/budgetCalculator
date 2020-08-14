@@ -1,6 +1,30 @@
 .body {
     display: flex;
     width: 100%;
+    position: relative;
+
+    .x-icon-button {
+        position: absolute;
+        top: -15px;
+        right: -17px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: rgb(16, 19, 41);
+        background-image: url('../../../assets/cancel.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+
+        transform: scale(0);
+    }
+
+    &:hover {
+        .x-icon-button {
+            opacity: 1;
+            transform: scale(1);   
+        }
+    }
 }
 
 .budget-item {
@@ -8,12 +32,16 @@
     width: 100%;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 20px;
     cursor: pointer;
 
     .description {
+        display: flex;
         flex-grow: 1;
         margin-left: 5px;
         font-size: 20px;
+
+        align-items: center;
     }
 
     .amount {

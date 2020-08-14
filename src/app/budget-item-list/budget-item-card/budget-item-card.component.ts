@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-budget-item-card',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BudgetItemCardComponent implements OnInit {
 
+  @Input() isIncome: Boolean = false;
+  
   constructor() { }
 
   ngOnInit(): void {
