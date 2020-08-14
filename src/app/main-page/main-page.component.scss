@@ -1,0 +1,47 @@
+.top-bar {
+    background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-transform: uppercase;
+        color: rgb(78, 78, 78);
+        margin-bottom: 0;
+    }
+}
+
+.total-budget {
+    height: 250px;
+    background-color: rgb(16, 19, 41);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-weight: 200;
+        font-size: 50px;
+        color: white;
+
+        &.green {
+            color: lighten(yellowgreen, 10%);
+        }
+
+        &.red {
+            color:lighten(#dc3900, 15%);
+        }
+    }
+}
+
+.add-item-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .add-item-container {
+        width: 80%;
+    }
+}
