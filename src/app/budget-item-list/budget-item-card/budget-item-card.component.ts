@@ -18,6 +18,6 @@ export class BudgetItemCardComponent implements OnInit {
 
   onDeleteCardButton() {
     this.deleteCardButton.emit();
-  }
+  } 
 
 }
