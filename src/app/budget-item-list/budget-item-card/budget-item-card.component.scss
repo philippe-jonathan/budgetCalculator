@@ -4,13 +4,13 @@
     position: relative;
 
     &:hover {
-        .x-icon-button {
+        .delete-icon-button {
             opacity: 1;
             transform: scale(1);   
         }
     }
 
-    .x-icon-button {
+    .delete-icon-button {
         position: absolute;
         top: -15px;
         right: -17px;

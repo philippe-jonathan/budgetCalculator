@@ -1,14 +1,14 @@
 <div class="body">
-    <div class="budget-item" [ngClass]="{ 'income': isIncome, 'expenses': !isIncome }">
+    <div class="budget-item" [ngClass]="{ 'income': item.amount >= 0, 'expenses': item.amount < 0 }">
         <div class="description">
-            <p>Test</p>
+            <p>{{ item.description }}</p>
         </div>
         <div class="amount">
-            <p>100</p>
+            <p>{{ item.amount }}</p>
         </div>
     </div>
 
-    <div class="x-icon-button">
+    <div class="delete-icon-button" (click)="onDeleteCardButton()">
 
     </div>
 </div>
