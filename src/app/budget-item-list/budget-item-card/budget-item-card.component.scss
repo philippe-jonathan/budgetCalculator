@@ -3,6 +3,13 @@
     width: 100%;
     position: relative;
 
+    &:hover {
+        .x-icon-button {
+            opacity: 1;
+            transform: scale(1);   
+        }
+    }
+
     .x-icon-button {
         position: absolute;
         top: -15px;
@@ -16,13 +23,15 @@
         background-position: center;
         background-size: 40%;
 
-        transform: scale(0);
-    }
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
 
-    &:hover {
-        .x-icon-button {
-            opacity: 1;
-            transform: scale(1);   
+        transform: scale(0);
+        opacity: 0;
+
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
         }
     }
 }
@@ -30,10 +39,16 @@
 .budget-item {
     display: flex;
     width: 100%;
+    background-color: #f8f9fa;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+        background-color: darken($color: #f8f9fa, $amount: 2%);
+    }
 
     .description {
         display: flex;
