@@ -10,7 +10,10 @@
     </div>
 
     <div>
-        <button type="submit" class="btn btn-outline-dark btn-lg btn-block" [disabled]="!itemForm.valid">Ajouter</button>
+        <button type="submit" class="btn btn-lg btn-block" [ngClass]="{ 'btn-outline-success' : !isNewItem, 'btn-outline-dark' : isNewItem }" [disabled]="!itemForm.valid">
+            <div *ngIf="isNewItem">Ajouter</div>
+            <div *ngIf="!isNewItem">Sauvegarder</div>
+        </button>
     </div>
 
 
